@@ -1,0 +1,333 @@
+/*sacar valores por defecto del navegador*/
+
+* {
+    font-family: 'Nunito', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+
+/* NAV --------------------------------------------------------------------------------*/
+
+
+.navbar{
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    list-style: none;
+}
+
+/* FOOTER --------------------------------------------------------------------------------*/
+
+.foot {
+grid-area: footer;
+background-color: #f1f1f1;
+padding: 10px;
+text-align:center;
+margin-top: auto;
+
+}
+
+.foot1 {
+    margin-top: 1em;
+    display: inline-block;
+    margin-left: auto;
+
+}
+
+.foot2 {
+    display:inline-block;
+    margin-left: 2em;
+}
+
+.foot3 {
+    margin-top: 1em;
+    display: inline-block;
+
+}
+
+.imagenInsta {
+    display: inline-block;
+    width: 22px;
+    align-content: left;
+
+}
+
+.imagenLinkedin {
+    display: inline-block;
+    width: 22px;
+    align-content: left;
+}
+
+#parrafoter1 {
+    display: inline-block;
+}
+
+#parrafoter2 {
+    display: inline-block;
+}
+
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    }
+    .flexbox-container > div {
+    width: 50%;
+    padding: 10px;
+    }
+    
+    .flexbox-container > div:first-child {
+    margin-right: 20px;
+    }
+
+
+/* TEXTOS ------------------------------------------------------------------------------------------------*/
+
+
+
+h1 {
+    
+    font-size: 3em;
+    padding: 10px 30px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+h2 {   
+    font-size: 20px;
+    text-align: left;
+    margin-top: 1em;
+}
+
+/* IMAGEN INDEX ----------------------------------------------------------------------------*/
+
+.perfil{
+    width: 96%;
+    max-width: 500px;
+    margin: auto;
+}
+.perfil_imagen {
+
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+/* BLOQUES MORADOS----------------------------------------------------------------------------*/
+
+.inicial {
+    width: 85vw;
+    background-color: rgb(54, 51, 161);   
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    padding: 20px 10px;
+    text-align:justify;
+    box-sizing: border-box;
+    border-radius: 15%;
+    box-shadow:  8px 4px 4px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
+    transition: 0.8s;
+}
+
+.inicial:hover {
+
+  background-color: rgb(12, 12, 141);   
+  color: white;
+  box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
+
+}
+
+.inicial_titulo {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+}
+
+
+.parrafoInicial_texto {
+    padding: 5px 4px;
+    display: inline-block;
+}
+
+.parrafoFormacion {
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.bloques {
+    width: 85vw;
+    background-color: rgb(54, 51, 161);   
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    padding: 20px 10px;
+    text-align:justify;
+    box-sizing: border-box;
+    border-radius: 5%;
+    box-shadow:  8px 4px 4px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
+    transition: 0.8s;
+}
+
+.bloques:hover {
+
+  background-color: rgb(12, 12, 141);   
+  color: white;
+  box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
+
+}
+
+
+.bloques_titulo {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/* ACORDEON -----------------------------------------------------------------------------*/
+
+
+.accordion-flush {
+    width: 85vw;
+    background-color: rgb(238, 238, 238);   
+    margin: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-radius: 3%;
+    box-shadow:  4px 2px 2px rgb(3, 31, 107), 10px 4px 8px rgb(3, 31, 107);
+    align-items: center;
+    transition: 1s;
+}
+
+.accordion-flush:hover {
+    background-color: rgb(0, 0, 0);  
+    box-shadow:  4px 2px 2px rgb(97, 97, 228), 10px 4px 8px rgb(97, 97, 228);
+}
+
+.accordion-header {
+    background-color: rgb(255, 255, 255);;
+    margin: auto;
+    padding: 0.1em;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 1%;
+    border-color: rgb(192, 186, 186) ;
+    transition: 1s;
+}
+
+.accordion-header:hover{
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
+
+.accordion-button {
+    width: 100%;
+    border-radius: 5%;
+    text-align: left;
+    display: block;
+    margin: left;
+    padding-left: 5px;
+    height: 2em;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-style: none;
+    transition: 1s;
+
+}
+
+.accordion-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.accordion-button:active {
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+
+
+/* FORMULARIO DE CONTACTO -------------------------------------------------------------------*/
+
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.tituloForm {
+    margin: auto;
+    text-align: center;
+}
+
+.formulario1 {
+
+    background-color: rgb(54, 51, 161);   
+    font-size: 20px;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 2%;
+    box-shadow:  15px 4px 10px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
+}
+
+
+.formulario1_inputs {
+    height: 40px;
+    width: 280px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(253, 249, 9);
+}
+
+
+.formulario1_input_coment {
+    height: 120px;
+    width: 280px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(253, 249, 9);
+}
+
+
+.enviar {
+    color: white;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px double rgb(5, 5, 0);
+    background-color: rgb(135, 76, 245);
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
