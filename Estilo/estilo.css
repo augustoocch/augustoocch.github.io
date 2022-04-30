@@ -12,12 +12,17 @@ flex-direction: column;
 min-height: 100vh;
 }
 
+h1 {
+    z-index: 1;
+}
+
 
 /* NAV --------------------------------------------------------------------------------*/
 
 
 .navbar{
     font-size: 16px;
+    z-index: 100;
 }
 
 a {
@@ -28,14 +33,17 @@ ul>li {
     list-style: none;
 }
 
+
+
 /* FOOTER --------------------------------------------------------------------------------*/
 
 .foot {
 grid-area: footer;
-background-color: #f1f1f1;
+background-color: #273de2a4;
 padding: 10px;
 text-align:center;
 margin-top: auto;
+color: white;
 
 }
 
@@ -130,21 +138,21 @@ h2 {
 
 .inicial {
     width: 85vw;
-    background-color: rgb(54, 51, 161);   
+    background-color: rgb(166, 162, 255);   
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: auto;
     padding: 20px 10px;
     text-align:justify;
     box-sizing: border-box;
-    border-radius: 15%;
+    border-radius: 15px;
     box-shadow:  8px 4px 4px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
     transition: 0.8s;
 }
 
 .inicial:hover {
 
-  background-color: rgb(12, 12, 141);   
+  background-color: rgb(54, 54, 195);   
   color: white;
   box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
 
@@ -178,7 +186,7 @@ h2 {
     padding: 20px 10px;
     text-align:justify;
     box-sizing: border-box;
-    border-radius: 5%;
+    border-radius: 10px;
     box-shadow:  8px 4px 4px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
     transition: 0.8s;
 }
@@ -199,7 +207,6 @@ h2 {
 }
 
 
-
 /* ACORDEON -----------------------------------------------------------------------------*/
 
 
@@ -209,7 +216,7 @@ h2 {
     margin: auto;
     padding: 10px 10px;
     box-sizing: border-box;
-    border-radius: 3%;
+    border-radius: 5px;
     box-shadow:  4px 2px 2px rgb(3, 31, 107), 10px 4px 8px rgb(3, 31, 107);
     align-items: center;
     transition: 1s;
@@ -226,7 +233,7 @@ h2 {
     padding: 0.1em;
     border-style: solid;
     border-width: thin;
-    border-radius: 1%;
+    border-radius: 5px;
     border-color: rgb(192, 186, 186) ;
     transition: 1s;
 }
@@ -238,7 +245,7 @@ h2 {
 
 .accordion-button {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 5px;
     text-align: left;
     display: block;
     margin: left;
@@ -265,7 +272,65 @@ h2 {
 
 /* FORMULARIO DE CONTACTO -------------------------------------------------------------------*/
 
+.container_form {
+    background-color: rgb(166, 162, 255);
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(117, 117, 229);
+    width: 90%;
+    margin: auto;
+    border-radius: 5%;
+}
+.form-group {
 
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.form-check {
+    width: 80%;
+    margin: auto;
+}
+
+.formularioGenero {
+    height: 40px;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.button-block{
+    width: 60%;
+    margin: auto;
+}
+.btn {
+    display: block;
+    margin: auto;
+    width: 100%;
+
+}
+
+.enviar {
+    color: white;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px double rgb(5, 5, 0);
+    background-color: rgb(88, 106, 239);
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*
 .formulario {
   display: flex;
   justify-content: center;
@@ -322,7 +387,7 @@ h2 {
     text-align: center;
 }
 
-
+*/
 
 
 

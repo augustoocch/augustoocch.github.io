@@ -54,33 +54,48 @@
         </header>
                 
         <div>  
-                <h1 class="animate__animated animate__fadeInDownBig">Contactame</h1>
-                <br><br>
-                <div class="formulario animate__animated animate__fadeIn">
-                    <form class= "formulario1 "method="post">
-                        <h2 class="tituloForm"><b>Ingrese sus datos</b></h2>
-                        <br>
-                            <input class="formulario1_inputs" type="texto" name="nombre" placeholder="Nombre y apellido" required/>
-                            <br>
-                            <select class="formulario1_inputs" id="genero" placeholder="Genero" required>
-                                <option value="select">Genero</option>
+            <h1 class="animate__animated animate__fadeInDownBig">Contactame</h1>
+            <br><br>
+        </div>    
+                
+        <section>
+                <div class="container_form inicial animate__animated animate__fadeIn">
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <input type="nombre" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su nombre" required>
+                        </div>    
+                        <div class="form-group">
+                            <input type="apellido" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su apellido" required>
+                        </div>
+                        <div class="form-group">  
+                            <label>Genero: </label>  
+                            <select class="formularioGenero" id="genero" placeholder="Genero" required>
+                                <option value="Otro">Prefiero no contestar</option>
                                 <option value="Masculino">M</option>
                                 <option value="Femenino">F</option> 
-                                <option value="Otro">Otro</option>
-                                <option value="Otro">Prefiero no contestar</option>
                             </select>
-                            <br>
-                            <input class="formulario1_inputs"type="email" name="email" placeholder="Email" required/>
-                            <br>
-                            <input class="formulario1_inputs"type="tel" name="telefono" placeholder="Telefono" required/>
-                            <br>
-                            <textarea class="formulario1_input_coment" name="comentario"placeholder="Inserte su comentario"></textarea>
-                            <input class="enviar" type="submit" name="Enviar"/>
+                        </div>
+                        <div class="form-group">    
+                            <textarea type="apellido" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su comentario"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Verificar</label>
+                        </div>
                         <br>
-                    </form>    
-                </div> 
-        </div>        
-                <br><br><br>
+                        <div class="button-block">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>    
+                    </form>
+                    <br>
+                </div>
+        </section>
+       
+            <br><br><br>
 
 
                 <footer class="foot">
