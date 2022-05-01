@@ -273,17 +273,27 @@ h2 {
 /* PROYECTOS -------------------------------------------------------------------*/
 
 .tarjetaCiudad {
-    width: 33vw;
+    width: 90vw;
     margin: auto;
     transition: 0.5s;
-
 }
 
  
 .tarjetaCiudad:hover {
-    width: 35vw;
+    width: 95vw;
 
 }
+
+@media screen and (min-width: 800px){
+    .tarjetaCiudad {
+        width: 33vw;
+    }
+
+    .tarjetaCiudad:hover {
+        width: 35vw;
+    }
+}
+
 
 
 
