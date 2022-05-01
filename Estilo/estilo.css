@@ -209,7 +209,7 @@ h2 {
 
 /* ACORDEON -----------------------------------------------------------------------------*/
 
-
+/*
 .accordion-flush {
     width: 85vw;
     background-color: rgb(238, 238, 238);   
@@ -267,6 +267,24 @@ h2 {
     color: rgb(255, 255, 255);
     background-color: black;
 }
+
+*/
+
+/* PROYECTOS -------------------------------------------------------------------*/
+
+.tarjetaCiudad {
+    width: 33vw;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+ 
+.tarjetaCiudad:hover {
+    width: 35vw;
+
+}
+
 
 
 
