@@ -115,8 +115,9 @@ h1 {
 
 h2 {   
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     margin-top: 1em;
+    margin: auto;
 }
 
 /* IMAGEN INDEX ----------------------------------------------------------------------------*/
@@ -205,6 +206,34 @@ h2 {
     margin: auto;
     text-align: center;
 }
+
+
+
+/* CONOCIMIENTO -------------------------------------------------------------------------*/
+
+.flexbox-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.flex-item { 
+
+    background-color: rgb(255, 247, 138);
+    height: 8em;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 1em;
+
+}  
+
+.imagenesCurso {
+    width: 100px; 
+    height: 100px;  
+}
+
 
 
 /* ACORDEON -----------------------------------------------------------------------------*/
