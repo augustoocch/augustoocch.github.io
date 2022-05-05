@@ -223,7 +223,7 @@ h2 {
     border-radius: 5px;
     margin-top: 1em;
     padding: 1em;
-    transition: 1s;
+    transition: 0.8s;
 }  
 
 .imagenesCurso {
@@ -232,21 +232,27 @@ h2 {
 }
 
 .texto-invisible {
-    visibility: hidden;
+    font-size: 0px;
 }
 
 
-.flex-item:hover { 
+.flex-item:hover{ 
 
     background-color: rgb(123, 196, 239);
-    height: 8.9em;
+    height: 9em;
+
 
 }
 
-.texto-invisible:hover {
-    visibility: visible;
+.flex-item:hover > .texto-invisible { 
+
+    font-size: 15px;
+    color: white;
+
+
 
 }
+
 
 @media screen and (min-width: 800px){
     .flexbox-container-1 {
@@ -260,6 +266,26 @@ h2 {
 
 
 /* ACORDEON -----------------------------------------------------------------------------*/
+
+.card-header{
+    background: linear-gradient(rgb(198, 204, 247), rgb(141, 184, 234));
+    color: white;
+    text-decoration: none;
+
+}
+
+.card-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(194, 239, 199), rgb(178, 202, 230));
+    
+}
+
+.btn {
+    margin-left: 0px;
+}
+
+
 
 
 /* PROYECTOS -------------------------------------------------------------------*/
@@ -342,4 +368,41 @@ h2 {
     display: block;
     margin: auto;
     text-align: center;
+}
+
+
+@media screen and (min-width: 700px){
+    .container_form {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (min-width: 850px){
+    .container_form {
+        width: 45vw;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+    .container_form {
+        width: 35vw;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .container_form {
+        width: 30vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .container_form {
+        width: 25vw;
+    }
+
 }
