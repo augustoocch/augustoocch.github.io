@@ -10,6 +10,7 @@ body {
 display: flex;
 flex-direction: column;
 min-height: 100vh;
+background: linear-gradient(rgb(254, 254, 254), rgb(187, 210, 255));   
 }
 
 h1 {
@@ -204,6 +205,13 @@ h2 {
     text-align: center;
 }
 
+@media screen and (min-width: 950px){
+    .bloques {
+        width: 600px;
+    }
+
+}
+
 
 
 /* CONOCIMIENTO -------------------------------------------------------------------------*/
@@ -262,7 +270,12 @@ h2 {
 }
 
 
-
+.card-body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(201, 249, 206), rgb(220, 251, 254));
+    
+}
 
 
 /* ACORDEON -----------------------------------------------------------------------------*/
@@ -274,10 +287,10 @@ h2 {
 
 }
 
-.card-body {
+.bodyCard {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
-    background: linear-gradient(rgb(194, 239, 199), rgb(178, 202, 230));
+    background: linear-gradient(rgb(194, 255, 251), rgb(255, 255, 255));
     
 }
 
@@ -285,6 +298,10 @@ h2 {
     margin-left: 0px;
 }
 
+.acorLabel {
+
+    font-size: 15px;
+}
 
 
 
@@ -326,16 +343,17 @@ h2 {
     width: 90%;
     margin: auto;
     border-radius: 5%;
+    
 }
 .form-group {
 
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: block;
 }
 
 .form-check {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -371,38 +389,18 @@ h2 {
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 480px){
     .container_form {
-        width: 50vw;
-    }
-
-}
-
-@media screen and (min-width: 850px){
-    .container_form {
-        width: 45vw;
-    }
-
-}
-
-@media screen and (min-width: 900px){
-    .container_form {
-        width: 35vw;
+        width: 400px;
     }
 
 }
 
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 950px){
     .container_form {
-        width: 30vw;
+        width: 350px;
     }
 
 }
 
-@media screen and (min-width: 1200px){
-    .container_form {
-        width: 25vw;
-    }
-
-}
