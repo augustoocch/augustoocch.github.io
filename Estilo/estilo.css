@@ -212,6 +212,18 @@ h2 {
 
 }
 
+.irContacto {
+    color: white;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px double rgb(5, 5, 0);
+    background: linear-gradient(rgb(88, 106, 239), rgb(21, 47, 76));
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 
 
 /* CONOCIMIENTO -------------------------------------------------------------------------*/
@@ -352,17 +364,66 @@ h2 {
     display: block;
 }
 
+.form-control:focus {
+    background: linear-gradient(rgb(23, 12, 12), rgb(61, 52, 52));
+}
+
+#nombre {
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#nombre::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#nombre:focus {
+    background: linear-gradient(rgb(102, 71, 135), rgb(126, 113, 199));
+}
+
+#apellido {
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#apellido::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#apellido:focus {
+    background: linear-gradient(rgb(102, 71, 135), rgb(126, 113, 199));
+}
+
+#email {
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#email::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#email:focus {
+    background: linear-gradient(rgb(102, 71, 135), rgb(126, 113, 199));
+}
+
+#coment {
+    background: transparent;
+    color: rgb(255, 255, 255);
+    resize: none;
+}
+
+#coment::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#coment:focus {
+    background: linear-gradient(rgb(102, 71, 135), rgb(126, 113, 199));
+}
+
 .form-check {
     width: 90%;
     margin: auto;
-}
-
-.formularioGenero {
-    height: 40px;
-    width: 100%;
-    margin: 5px 0px;
-    border-radius: 5px;
-    border: 1px solid;
 }
 
 .button-block{
@@ -373,21 +434,7 @@ h2 {
     display: block;
     margin: auto;
     width: 100%;
-
 }
-
-.enviar {
-    color: white;
-    height: 30px;
-    width: 180px;
-    border-radius: 5px;
-    border: 1px double rgb(5, 5, 0);
-    background: linear-gradient(rgb(88, 106, 239), rgb(21, 47, 76));
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
 
 @media screen and (min-width: 480px){
     .container_form {
@@ -395,7 +442,6 @@ h2 {
     }
 
 }
-
 
 @media screen and (min-width: 950px){
     .container_form {
