@@ -589,4 +589,22 @@ h2 {
 
 }
 
+@media screen and (max-width: 450px){
+    
+    .ContactFormContainer{
+        display: block;
+        margin-top: 2em;
+    }
+    .container_form1 {
+        width: 280px;
+        margin: auto;
+        height: 270px;
+    }
+
+    .container_form2 {
+        width: 350px;
+        margin-top: -1.5em;
+    }
+
+}
 
