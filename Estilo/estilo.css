@@ -446,7 +446,7 @@ h2 {
     background: linear-gradient(rgb(203, 213, 253),rgb(136, 177, 224));   
     border-width: 2px;
     min-width: 20vw;
-    height: 35vh;  
+    height: 250px;  
     z-index: 5;
     text-align: left;
     margin: auto;
@@ -605,6 +605,31 @@ h2 {
         width: 350px;
         margin-top: -1.5em;
     }
+
+}
+
+
+@media screen and (max-width: 300px){
+    
+    .ContactFormContainer{
+        display: block;
+        margin-top: 2em;
+    }
+    .container_form1 {
+        width: 230px;
+        margin: auto;
+        height: 400px;
+    }
+
+    .container_form2 {
+        width: 250px;
+        margin-top: -1em;
+    }
+
+    .container_form1:first-child {
+        text-align: center;
+  }      
+  
 
 }
 
