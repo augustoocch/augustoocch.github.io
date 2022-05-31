@@ -11,6 +11,7 @@ display: flex;
 flex-direction: column;
 min-height: 100vh;
 background: linear-gradient(rgb(254, 254, 254), rgb(187, 210, 255));   
+overflow-x: hidden;
 }
 
 h1 {
@@ -26,9 +27,6 @@ h1 {
     z-index: 100;
 }
 
-a {
-    text-decoration: none;
-}
 
 ul>li {
     list-style: none;
@@ -52,19 +50,13 @@ color: white;
     margin-top: 1em;
     display: inline-block;
     margin-left: auto;
-
 }
 
 .foot2 {
     display:inline-block;
     margin-left: 2em;
-}
+}  
 
-.foot3 {
-    margin-top: 1em;
-    display: inline-block;
-
-}
 
 .imagenInsta {
     display: inline-block;
@@ -128,12 +120,27 @@ h2 {
     max-width: 500px;
     margin: auto;
 }
+
 .perfil_imagen {
 
     display: block;
     width: 100%;
     height: auto;
+    animation: perfil 3s ease-in-out
+    infinite;
+}  
 
+@keyframes perfil {
+
+0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* BLOQUES MORADOS----------------------------------------------------------------------------*/
@@ -149,13 +156,18 @@ h2 {
     box-sizing: border-box;
     border-radius: 15px;
     box-shadow:  8px 4px 4px rgb(3, 31, 107), 15px 4px 10px rgb(3, 31, 107);
-    transition: 1s;
+    transition-property: all;
+    transition-duration:  1s;
 }
 
-.inicial:hover {
-  color: rgb(0, 0, 0);
-  box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
+.irContacto { 
+    text-decoration: none;
+    color: inherit;
+ } 
 
+.inicial:hover {
+  background: linear-gradient(rgb(140, 134, 237), rgb(7, 24, 44));
+  box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
 }
 
 .inicial_titulo {
@@ -192,8 +204,6 @@ h2 {
 }
 
 .bloques:hover {
-
-  color: white;
   box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
 
 }
@@ -226,25 +236,87 @@ h2 {
 
 
 
-/* CONOCIMIENTO -------------------------------------------------------------------------*/
+/* FLEX ITEM TOOLS -------------------------------------------------------------------------*/
 
 .flexbox-container-1 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
 .flex-item { 
-
     background: linear-gradient(rgb(213, 231, 149), rgb(21, 47, 76));
     height: 8em;
     border-radius: 5px;
     margin-top: 1em;
     padding: 1em;
-    transition: 0.8s;
+    transition-property: all;
+    transition-duration: 1s;
 }  
+
+.floatStudy1{
+    animation: study1 5s ease-in-out
+    infinite;
+}  
+
+@keyframes study1 {
+
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-5px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+
+.floatStudy2{
+    animation: study2 5s ease-in-out
+    infinite;
+}  
+
+@keyframes study2 {
+
+    0% {
+    transform: translateY(-5px);
+    }           
+    50% {
+    transform: translateY(0);
+    }  
+    100% {
+    transform: translateY(-5px);
+    }
+}
+
+/*
+.js-scroll {
+    transition: opacity 1s;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+  
+  .scrolled.slide-left {
+    animation: slide-in-left 1s ease-in-out both;
+  }
+  
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+}
+
+*/
 
 .imagenesCurso {
     width: 100px; 
@@ -260,19 +332,34 @@ h2 {
 
     background-color: rgb(123, 196, 239);
     height: 9em;
+}
 
+/* CARDS EDUCATION -------------------------------------------------------------------------*/
 
+.education{
+    width: 90%;
+    margin: auto;
+}
+
+.card-img-top{
+    height: 18em;
+}
+
+.tit-tramite {
+    height: 20em;
+    margin: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tit-tramite, .p {
+    padding-top: 10em;
 }
 
 .flex-item:hover > .texto-invisible { 
-
     font-size: 15px;
     color: white;
-
-
-
 }
-
 
 @media screen and (min-width: 800px){
     .flexbox-container-1 {
@@ -347,16 +434,63 @@ h2 {
 
 /* FORMULARIO DE CONTACTO -------------------------------------------------------------------*/
 
-.container_form {
-    background-color: rgb(166, 162, 255);
-    border: solid;
-    border-width: 2px;
-    border-color: rgb(117, 117, 229);
-    width: 90%;
+.ContactFormContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
     margin: auto;
-    border-radius: 5%;
-    
 }
+
+.container_form1 {
+    background: linear-gradient(rgb(203, 213, 253),rgb(136, 177, 224));   
+    border-width: 2px;
+    min-width: 20vw;
+    height: 35vh;  
+    z-index: 5;
+    text-align: left;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+}
+
+.container_form1:first-child {
+      filter: drop-shadow( 5px 5px 10px #000 );
+      z-index: 0;
+      text-align: right;
+}      
+
+.container_form2 {
+    width: 350px;
+    background: linear-gradient(rgb(166, 162, 255), rgb(21, 47, 76));   
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px 10px;
+    text-align:justify;
+    transition-property: all;
+    transition-duration:  1s;
+    border-color: rgb(117, 117, 229); 
+    filter: drop-shadow( 5px 5px 10px #000 );
+    z-index: 20;
+}
+
+.fa-envelopes-bulk {
+    font-size: 7em;
+    display: inline-block;
+}
+
+.message {
+    display: inline-block;
+    font-size: 17px;
+    max-width: 100px;
+}
+
+.container_form2:hover {
+    background: linear-gradient(rgb(140, 134, 237), rgb(7, 24, 44));
+    box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
+  }
+
 .form-group {
 
     width: 90%;
@@ -436,17 +570,23 @@ h2 {
     width: 100%;
 }
 
-@media screen and (min-width: 480px){
-    .container_form {
+@media screen and (max-width: 650px){
+    
+    .ContactFormContainer{
+        display: block;
+        margin-top: 2em;
+    }
+    .container_form1 {
+        width: 300px;
+        margin: auto;
+        height: 270px;
+    }
+
+    .container_form2 {
         width: 400px;
+        margin-top: -1.5em;
     }
 
 }
 
-@media screen and (min-width: 950px){
-    .container_form {
-        width: 350px;
-    }
-
-}
 
