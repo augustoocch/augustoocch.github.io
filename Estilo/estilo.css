@@ -185,7 +185,6 @@ h2 {
 .parrafoFormacion {
     margin: auto;
     text-align: center;
-
 }
 
 
@@ -207,7 +206,6 @@ h2 {
   box-shadow:  8px 4px 4px rgb(97, 97, 228), 15px 4px 10px rgb(97, 97, 228);
 
 }
-
 
 .bloques_titulo {
     font-size: 1.5em;
@@ -234,6 +232,10 @@ h2 {
     text-align: center;
 }
 
+.linkContact{
+    color: inherit;
+}
+
 
 
 /* FLEX ITEM TOOLS -------------------------------------------------------------------------*/
@@ -256,7 +258,7 @@ h2 {
 }  
 
 .floatStudy1{
-    animation: study1 5s ease-in-out
+    animation: study1 3.5s ease-in-out
     infinite;
 }  
 
@@ -274,7 +276,7 @@ h2 {
 }
 
 .floatStudy2{
-    animation: study2 5s ease-in-out
+    animation: study2 3.5s ease-in-out
     infinite;
 }  
 
@@ -341,9 +343,79 @@ h2 {
     margin: auto;
 }
 
-.card-img-top{
-    height: 18em;
+.card1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+  }
+  
+  
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+  
+  .card-img-top1 {
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+  
+.card-deck1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .card-deck1 .card1 {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 900px) {
+    
+    .education{
+        width: 70%;
+    }
 }
+
+@media (max-width: 700px) {
+    
+    .education{
+        width: 90%;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .card-deck1  {
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .card-deck1 .card1 {
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex: 1 0 0%;
+      flex: 1 0 0%;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
+    }
+}
+  
 
 .tit-tramite {
     height: 20em;
